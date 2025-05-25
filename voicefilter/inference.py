@@ -4,10 +4,10 @@ import torch
 import librosa
 import argparse
 
-from utils.audio import Audio
-from utils.hparams import HParam
-from model.model import VoiceFilter
-from model.embedder import SpeechEmbedder
+from voicefilter.utils.audio import Audio
+from voicefilter.utils.hparams import HParam
+from voicefilter.model.model import VoiceFilter
+from voicefilter.model import SpeechEmbedder
 
 
 def main(args, hp):

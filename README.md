@@ -44,7 +44,7 @@ Best regards, Seung-won Park
 Unofficial PyTorch implementation of Google AI's:
 [VoiceFilter: Targeted Voice Separation by Speaker-Conditioned Spectrogram Masking](https://arxiv.org/abs/1810.04826).
 
-![](./assets/voicefilter.png)
+![](voicefilter/assets/voicefilter.png)
 
 ## Result
 
@@ -62,7 +62,7 @@ Unofficial PyTorch implementation of Google AI's:
 | before VoiceFilter     |  2.5  |  1.9 |
 | after VoiceFilter      | 12.6  | 10.2 |
 
-![](./assets/sdr-result.png)
+![](voicefilter/assets/sdr-result.png)
 
 - SDR converged at 10, which is slightly lower than paper's.
 
@@ -152,7 +152,7 @@ Unofficial PyTorch implementation of Google AI's:
     tensorboard --logdir ./logs
     ```
     
-    ![](./assets/tensorboard.png)
+    ![](voicefilter/assets/tensorboard.png)
 
 1. Resuming from checkpoint
 
@@ -179,7 +179,7 @@ python inference.py -c [config yaml] -e [path of embedder pt file] --checkpoint_
 Apache License 2.0
 
 This repository contains codes adapted/copied from the followings:
-- [utils/adabound.py](./utils/adabound.py) from https://github.com/Luolc/AdaBound (Apache License 2.0)
-- [utils/audio.py](./utils/audio.py) from https://github.com/keithito/tacotron (MIT License)
-- [utils/hparams.py](./utils/hparams.py) from https://github.com/HarryVolek/PyTorch_Speaker_Verification (No License specified)
-- [utils/normalize-resample.sh](./utils/normalize-resample.sh.) from https://unix.stackexchange.com/a/216475
+- [utils/adabound.py](voicefilter/utils/adabound.py) from https://github.com/Luolc/AdaBound (Apache License 2.0)
+- [utils/audio.py](voicefilter/utils/audio.py) from https://github.com/keithito/tacotron (MIT License)
+- [utils/hparams.py](voicefilter/utils/hparams.py) from https://github.com/HarryVolek/PyTorch_Speaker_Verification (No License specified)
+- [utils/normalize-resample.sh](voicefilter/utils/normalize-resample.sh.) from https://unix.stackexchange.com/a/216475

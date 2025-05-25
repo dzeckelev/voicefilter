@@ -8,8 +8,8 @@ import argparse
 import numpy as np
 from multiprocessing import Pool, cpu_count
 
-from utils.audio import Audio
-from utils.hparams import HParam
+from voicefilter.utils.audio import Audio
+from voicefilter.utils.hparams import HParam
 
 
 def formatter(dir_, form, num):

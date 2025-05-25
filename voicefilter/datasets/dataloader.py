@@ -4,7 +4,7 @@ import torch
 import librosa
 from torch.utils.data import Dataset, DataLoader
 
-from utils.audio import Audio
+from voicefilter.utils.audio import Audio
 
 
 def create_dataloader(hp, args, train):
